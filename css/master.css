@@ -1,0 +1,105 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    overflow: hidden;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 20px 20px;
+}
+
+@media (max-width: 768px) {
+    main .content {
+        grid-template-columns: minmax(330px, 1fr);
+    }
+}
+
+main .content .col {
+    padding: 47px;
+}
+
+main .content .col.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+main .content .col.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .content .col.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+main .content .col .info h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 25px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+main .content .col .info p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+main .content .col button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 26px;
+    border-radius: 25px;
+    font-size: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+main .content .col.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+main .content .col.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+main .content .col.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+main .content .col button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
